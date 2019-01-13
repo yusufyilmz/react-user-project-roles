@@ -4,8 +4,6 @@ import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk';
 import promise from 'redux-promise';
 import moxios from 'moxios';
-import axios from "axios";
-import fetchMock from 'fetch-mock'
 
 const middlewares = [thunk, promise];
 const mockStore = configureMockStore(middlewares);

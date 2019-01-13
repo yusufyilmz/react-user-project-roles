@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectBox component snapchat correctly 1`] = `
+<OnClickOutside(SelectBox)
+  eventTypes={
+    Array [
+      "mousedown",
+      "touchstart",
+    ]
+  }
+  excludeScrollbar={false}
+  list={
+    Array [
+      Object {
+        "id": 1,
+        "name": "test",
+      },
+    ]
+  }
+  name="testName"
+  outsideClickIgnoreClass="ignore-react-onclickoutside"
+  placeHolder="testPlaceholder"
+  preventDefault={false}
+  required={true}
+  selectItem={[MockFunction]}
+  stopPropagation={false}
+  text="testText"
+>
+  <SelectBox
+    disableOnClickOutside={[Function]}
+    enableOnClickOutside={[Function]}
+    eventTypes={
+      Array [
+        "mousedown",
+        "touchstart",
+      ]
+    }
+    list={
+      Array [
+        Object {
+          "id": 1,
+          "name": "test",
+        },
+      ]
+    }
+    name="testName"
+    outsideClickIgnoreClass="ignore-react-onclickoutside"
+    placeHolder="testPlaceholder"
+    preventDefault={false}
+    required={true}
+    selectItem={[MockFunction]}
+    stopPropagation={false}
+    text="testText"
+  >
+    <div>
+      <Component
+        name="testName"
+        onChange={[Function]}
+        onClick={[Function]}
+        placeHolder="testPlaceholder"
+        required={true}
+        text="testText"
+        type="text"
+        value=""
+      >
+        <Label
+          htmlFor="testName"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": true,
+                  "lastClassName": "hApbuX",
+                  "rules": Array [
+                    "
+    float: left;
+    width: 25%;
+    margin: 15px 5px;",
+                  ],
+                },
+                "displayName": "Label",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "label",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            htmlFor="testName"
+          >
+            <label
+              className="sc-htpNat hApbuX"
+              htmlFor="testName"
+            >
+              testText
+            </label>
+          </StyledComponent>
+        </Label>
+        <Input
+          autoComplete="off"
+          id="testName"
+          name="testName"
+          onChange={[Function]}
+          onClick={[Function]}
+          placeholder="testPlaceholder"
+          required={true}
+          type="text"
+          value=""
+        >
+          <StyledComponent
+            autoComplete="off"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bxivhb",
+                  "isStatic": false,
+                  "lastClassName": "beFuQG",
+                  "rules": Array [
+                    "
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: ",
+                    [Function],
+                    "
+    display: ",
+                    [Function],
+                    "
+    justify-content: ",
+                    [Function],
+                    "
+    color: ",
+                    [Function],
+                    "
+    ",
+                  ],
+                },
+                "displayName": "Input",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bxivhb",
+                "target": "input",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            id="testName"
+            name="testName"
+            onChange={[Function]}
+            onClick={[Function]}
+            placeholder="testPlaceholder"
+            required={true}
+            type="text"
+            value=""
+          >
+            <input
+              autoComplete="off"
+              className="sc-bxivhb beFuQG"
+              id="testName"
+              name="testName"
+              onChange={[Function]}
+              onClick={[Function]}
+              placeholder="testPlaceholder"
+              required={true}
+              type="text"
+              value=""
+            />
+          </StyledComponent>
+        </Input>
+      </Component>
+    </div>
+  </SelectBox>
+</OnClickOutside(SelectBox)>
+`;

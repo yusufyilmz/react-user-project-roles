@@ -6,8 +6,7 @@ import Input from '../../Input';
 import { mount } from 'enzyme'
 
 
-describe('SelectBox component', () => {
-
+describe('SELECTBOX COMPONENT', () => {
 
     let props, wrapper;
 
@@ -54,7 +53,6 @@ describe('SelectBox component', () => {
 
     test('renders select item correctly', () => {
         wrapper.find('Input').simulate('click');
-        // let li = wrapper.find('li')[0]
         wrapper.find('li').simulate('click');
         expect(props.selectItem.mock.calls.length).toEqual(1);
     });
@@ -67,8 +65,8 @@ describe('SelectBox component', () => {
     });
 
 
-    test('renders element correctly', () => {
-        // expect(wrapper).toMatchSnapshot();
+    test('snapchat correctly', () => {
+        expect(wrapper).toMatchSnapshot();
     });
 
 })

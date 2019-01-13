@@ -170,8 +170,6 @@ const addProjectRoleToUser = (request) => {
 }
 
 
-
-
 const requestUsersHandler = (request, generator) => {
   return [200, { 'Content-Type': 'application/json' }, JSON.stringify(getUsers())];
 }

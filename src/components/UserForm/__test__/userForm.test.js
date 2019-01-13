@@ -10,11 +10,10 @@ import { Provider } from "react-redux";
 
 import ReduxThunkMiddleware from 'redux-thunk';
 import ReduxPromiseMiddleware from 'redux-promise';
-import UserFormContainer from '../../../containers/userFormContainer';
 
 let middlewares = [ReduxThunkMiddleware, ReduxPromiseMiddleware]
 
-describe('UserForm component', () => {
+describe('USERFORM COMPONENT', () => {
 
     const mockStore = configureMockStore(middlewares);
     const store = mockStore({
@@ -42,10 +41,10 @@ describe('UserForm component', () => {
     test('renders form element correctly', () => {
         expect(wrapper.find(Input).length).toBe(4)
         expect(wrapper.find('Label').length).toBe(4)
-
     })
 
-    test('renders element correctly', () => {
-        // expect(wrapper).toMatchSnapshot();
+    test('snapchat correctly', () => {
+        expect(wrapper).toMatchSnapshot();
     });
+
 })

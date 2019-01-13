@@ -1,0 +1,673 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserForm component snapchat correctly 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <UserForm>
+    <Connect(UserFormContainer)>
+      <UserFormContainer
+        addProjecRoleToUser={[Function]}
+        fetchUserProjectsAndRoles={[Function]}
+        removeRoleFromProject={[Function]}
+        resetRemoveRoleFromProject={[Function]}
+      >
+        <Form
+          onSubmit={[Function]}
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-ifAKCX",
+                  "isStatic": true,
+                  "lastClassName": "eoDtmv",
+                  "rules": Array [
+                    "
+    padding: 10px;
+",
+                  ],
+                },
+                "displayName": "Form",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-ifAKCX",
+                "target": "form",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onSubmit={[Function]}
+          >
+            <form
+              className="sc-ifAKCX eoDtmv"
+              onSubmit={[Function]}
+            >
+              <OnClickOutside(SelectBox)
+                eventTypes={
+                  Array [
+                    "mousedown",
+                    "touchstart",
+                  ]
+                }
+                excludeScrollbar={false}
+                name="user"
+                outsideClickIgnoreClass="ignore-react-onclickoutside"
+                placeHolder="Enter or select username"
+                preventDefault={false}
+                required={true}
+                selectItem={[Function]}
+                stopPropagation={false}
+                text="User"
+              >
+                <SelectBox
+                  disableOnClickOutside={[Function]}
+                  enableOnClickOutside={[Function]}
+                  eventTypes={
+                    Array [
+                      "mousedown",
+                      "touchstart",
+                    ]
+                  }
+                  name="user"
+                  outsideClickIgnoreClass="ignore-react-onclickoutside"
+                  placeHolder="Enter or select username"
+                  preventDefault={false}
+                  required={true}
+                  selectItem={[Function]}
+                  stopPropagation={false}
+                  text="User"
+                >
+                  <div>
+                    <Component
+                      name="user"
+                      onChange={[Function]}
+                      onClick={[Function]}
+                      placeHolder="Enter or select username"
+                      required={true}
+                      text="User"
+                      type="text"
+                      value=""
+                    >
+                      <Label
+                        htmlFor="user"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htpNat",
+                                "isStatic": true,
+                                "lastClassName": "hApbuX",
+                                "rules": Array [
+                                  "
+    float: left;
+    width: 25%;
+    margin: 15px 5px;",
+                                ],
+                              },
+                              "displayName": "Label",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htpNat",
+                              "target": "label",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          htmlFor="user"
+                        >
+                          <label
+                            className="sc-htpNat hApbuX"
+                            htmlFor="user"
+                          >
+                            User
+                          </label>
+                        </StyledComponent>
+                      </Label>
+                      <Input
+                        autoComplete="off"
+                        id="user"
+                        name="user"
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        placeholder="Enter or select username"
+                        required={true}
+                        type="text"
+                        value=""
+                      >
+                        <StyledComponent
+                          autoComplete="off"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bxivhb",
+                                "isStatic": false,
+                                "lastClassName": "byeNva",
+                                "rules": Array [
+                                  "
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: ",
+                                  [Function],
+                                  "
+    display: ",
+                                  [Function],
+                                  "
+    justify-content: ",
+                                  [Function],
+                                  "
+    color: ",
+                                  [Function],
+                                  "
+    ",
+                                ],
+                              },
+                              "displayName": "Input",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bxivhb",
+                              "target": "input",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          id="user"
+                          name="user"
+                          onChange={[Function]}
+                          onClick={[Function]}
+                          placeholder="Enter or select username"
+                          required={true}
+                          type="text"
+                          value=""
+                        >
+                          <input
+                            autoComplete="off"
+                            className="sc-bxivhb beFuQG"
+                            id="user"
+                            name="user"
+                            onChange={[Function]}
+                            onClick={[Function]}
+                            placeholder="Enter or select username"
+                            required={true}
+                            type="text"
+                            value=""
+                          />
+                        </StyledComponent>
+                      </Input>
+                    </Component>
+                  </div>
+                </SelectBox>
+              </OnClickOutside(SelectBox)>
+              <OnClickOutside(SelectBox)
+                eventTypes={
+                  Array [
+                    "mousedown",
+                    "touchstart",
+                  ]
+                }
+                excludeScrollbar={false}
+                name="role"
+                outsideClickIgnoreClass="ignore-react-onclickoutside"
+                placeHolder="Select role"
+                preventDefault={false}
+                required={true}
+                selectItem={[Function]}
+                stopPropagation={false}
+                text="Roles"
+              >
+                <SelectBox
+                  disableOnClickOutside={[Function]}
+                  enableOnClickOutside={[Function]}
+                  eventTypes={
+                    Array [
+                      "mousedown",
+                      "touchstart",
+                    ]
+                  }
+                  name="role"
+                  outsideClickIgnoreClass="ignore-react-onclickoutside"
+                  placeHolder="Select role"
+                  preventDefault={false}
+                  required={true}
+                  selectItem={[Function]}
+                  stopPropagation={false}
+                  text="Roles"
+                >
+                  <div>
+                    <Component
+                      name="role"
+                      onChange={[Function]}
+                      onClick={[Function]}
+                      placeHolder="Select role"
+                      required={true}
+                      text="Roles"
+                      type="text"
+                      value=""
+                    >
+                      <Label
+                        htmlFor="role"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htpNat",
+                                "isStatic": true,
+                                "lastClassName": "hApbuX",
+                                "rules": Array [
+                                  "
+    float: left;
+    width: 25%;
+    margin: 15px 5px;",
+                                ],
+                              },
+                              "displayName": "Label",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htpNat",
+                              "target": "label",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          htmlFor="role"
+                        >
+                          <label
+                            className="sc-htpNat hApbuX"
+                            htmlFor="role"
+                          >
+                            Roles
+                          </label>
+                        </StyledComponent>
+                      </Label>
+                      <Input
+                        autoComplete="off"
+                        id="role"
+                        name="role"
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        placeholder="Select role"
+                        required={true}
+                        type="text"
+                        value=""
+                      >
+                        <StyledComponent
+                          autoComplete="off"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bxivhb",
+                                "isStatic": false,
+                                "lastClassName": "byeNva",
+                                "rules": Array [
+                                  "
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: ",
+                                  [Function],
+                                  "
+    display: ",
+                                  [Function],
+                                  "
+    justify-content: ",
+                                  [Function],
+                                  "
+    color: ",
+                                  [Function],
+                                  "
+    ",
+                                ],
+                              },
+                              "displayName": "Input",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bxivhb",
+                              "target": "input",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          id="role"
+                          name="role"
+                          onChange={[Function]}
+                          onClick={[Function]}
+                          placeholder="Select role"
+                          required={true}
+                          type="text"
+                          value=""
+                        >
+                          <input
+                            autoComplete="off"
+                            className="sc-bxivhb beFuQG"
+                            id="role"
+                            name="role"
+                            onChange={[Function]}
+                            onClick={[Function]}
+                            placeholder="Select role"
+                            required={true}
+                            type="text"
+                            value=""
+                          />
+                        </StyledComponent>
+                      </Input>
+                    </Component>
+                  </div>
+                </SelectBox>
+              </OnClickOutside(SelectBox)>
+              <OnClickOutside(SelectBox)
+                eventTypes={
+                  Array [
+                    "mousedown",
+                    "touchstart",
+                  ]
+                }
+                excludeScrollbar={false}
+                name="project"
+                outsideClickIgnoreClass="ignore-react-onclickoutside"
+                placeHolder="Select project"
+                preventDefault={false}
+                required={true}
+                selectItem={[Function]}
+                stopPropagation={false}
+                text="Projects"
+              >
+                <SelectBox
+                  disableOnClickOutside={[Function]}
+                  enableOnClickOutside={[Function]}
+                  eventTypes={
+                    Array [
+                      "mousedown",
+                      "touchstart",
+                    ]
+                  }
+                  name="project"
+                  outsideClickIgnoreClass="ignore-react-onclickoutside"
+                  placeHolder="Select project"
+                  preventDefault={false}
+                  required={true}
+                  selectItem={[Function]}
+                  stopPropagation={false}
+                  text="Projects"
+                >
+                  <div>
+                    <Component
+                      name="project"
+                      onChange={[Function]}
+                      onClick={[Function]}
+                      placeHolder="Select project"
+                      required={true}
+                      text="Projects"
+                      type="text"
+                      value=""
+                    >
+                      <Label
+                        htmlFor="project"
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htpNat",
+                                "isStatic": true,
+                                "lastClassName": "hApbuX",
+                                "rules": Array [
+                                  "
+    float: left;
+    width: 25%;
+    margin: 15px 5px;",
+                                ],
+                              },
+                              "displayName": "Label",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htpNat",
+                              "target": "label",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          htmlFor="project"
+                        >
+                          <label
+                            className="sc-htpNat hApbuX"
+                            htmlFor="project"
+                          >
+                            Projects
+                          </label>
+                        </StyledComponent>
+                      </Label>
+                      <Input
+                        autoComplete="off"
+                        id="project"
+                        name="project"
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        placeholder="Select project"
+                        required={true}
+                        type="text"
+                        value=""
+                      >
+                        <StyledComponent
+                          autoComplete="off"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bxivhb",
+                                "isStatic": false,
+                                "lastClassName": "byeNva",
+                                "rules": Array [
+                                  "
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: ",
+                                  [Function],
+                                  "
+    display: ",
+                                  [Function],
+                                  "
+    justify-content: ",
+                                  [Function],
+                                  "
+    color: ",
+                                  [Function],
+                                  "
+    ",
+                                ],
+                              },
+                              "displayName": "Input",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-bxivhb",
+                              "target": "input",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          id="project"
+                          name="project"
+                          onChange={[Function]}
+                          onClick={[Function]}
+                          placeholder="Select project"
+                          required={true}
+                          type="text"
+                          value=""
+                        >
+                          <input
+                            autoComplete="off"
+                            className="sc-bxivhb beFuQG"
+                            id="project"
+                            name="project"
+                            onChange={[Function]}
+                            onClick={[Function]}
+                            placeholder="Select project"
+                            required={true}
+                            type="text"
+                            value=""
+                          />
+                        </StyledComponent>
+                      </Input>
+                    </Component>
+                  </div>
+                </SelectBox>
+              </OnClickOutside(SelectBox)>
+              <Component
+                type="submit"
+                value="Submit role"
+              >
+                <Label>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-htpNat",
+                          "isStatic": true,
+                          "lastClassName": "hApbuX",
+                          "rules": Array [
+                            "
+    float: left;
+    width: 25%;
+    margin: 15px 5px;",
+                          ],
+                        },
+                        "displayName": "Label",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-htpNat",
+                        "target": "label",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <label
+                      className="sc-htpNat hApbuX"
+                    />
+                  </StyledComponent>
+                </Label>
+                <Input
+                  autoComplete="off"
+                  type="submit"
+                  value="Submit role"
+                >
+                  <StyledComponent
+                    autoComplete="off"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bxivhb",
+                          "isStatic": false,
+                          "lastClassName": "byeNva",
+                          "rules": Array [
+                            "
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: ",
+                            [Function],
+                            "
+    display: ",
+                            [Function],
+                            "
+    justify-content: ",
+                            [Function],
+                            "
+    color: ",
+                            [Function],
+                            "
+    ",
+                          ],
+                        },
+                        "displayName": "Input",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bxivhb",
+                        "target": "input",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    type="submit"
+                    value="Submit role"
+                  >
+                    <input
+                      autoComplete="off"
+                      className="sc-bxivhb byeNva"
+                      type="submit"
+                      value="Submit role"
+                    />
+                  </StyledComponent>
+                </Input>
+              </Component>
+            </form>
+          </StyledComponent>
+        </Form>
+      </UserFormContainer>
+    </Connect(UserFormContainer)>
+  </UserForm>
+</Provider>
+`;

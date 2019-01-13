@@ -26,8 +26,6 @@ export const ModalContent = styled.div`
     border-color: #ebccd1;
     background-color: ${props => props.result === 'OK' ? '#28a745' :  '#f2dede'}
     color: ${props => props.result === 'OK' ? 'white' :  '#a94442'}
-
-
 `
 
 export const ModalClose = styled.span`

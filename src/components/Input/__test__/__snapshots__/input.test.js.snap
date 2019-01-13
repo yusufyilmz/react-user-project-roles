@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component snapchat correctly 1`] = `
+<Fragment>
+  <Label>
+    test
+  </Label>
+  <Input
+    autoComplete="off"
+    onChange={[MockFunction]}
+    type="text"
+    value="value"
+  />
+</Fragment>
+`;

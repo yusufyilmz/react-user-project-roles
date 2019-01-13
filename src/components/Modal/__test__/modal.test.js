@@ -5,7 +5,7 @@ import Modal from '../index';
 import { shallow } from 'enzyme'
 
 
-describe('Modal component', () => {
+describe('MODAL COMPONENT', () => {
 
     let props, wrapper;
 
@@ -23,20 +23,13 @@ describe('Modal component', () => {
         );
     });
 
-    test('renders element correctly', () => {
-        // expect(wrapper).toMatchSnapshot();
-    });
-
     test('renders onclick correctly', () => {
         wrapper.find('ModalClose').simulate('click');
         expect(props.closeModal.mock.calls.length).toEqual(1);
     });
 
-    test('renders onclick correctly', () => {
-
-        // wrapper.find('ModalClose').simulate('click');
-        // expect(onChange.mock.calls.length).toEqual(1);
-
+    test('snapchat correctly', () => {
+        expect(wrapper).toMatchSnapshot();
     });
     
 })

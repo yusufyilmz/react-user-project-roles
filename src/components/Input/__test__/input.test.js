@@ -22,10 +22,6 @@ describe('Input component', () => {
         );
     });
 
-    test('renders element correctly', () => {
-        // expect(wrapper).toMatchSnapshot();
-    });
-
     test('renders onclick correctly', () => {
         expect(wrapper.find('Label').text()).toBe(props.text);
     });
@@ -37,6 +33,9 @@ describe('Input component', () => {
     test('renders onclick correctly', () => {
         wrapper.find('Input').simulate('change');
         expect(props.onChange.mock.calls.length).toEqual(1);
+    });
 
+    test('snapchat correctly', () => {
+        expect(wrapper).toMatchSnapshot();
     });
 })

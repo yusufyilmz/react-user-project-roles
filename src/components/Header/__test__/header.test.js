@@ -5,7 +5,7 @@ import {Header} from '../index';
 import { shallow } from 'enzyme'
 
 
-describe('Header component', () => {
+describe('HEADER COMPONENT', () => {
 
     let message, wrapper;
 
@@ -20,9 +20,7 @@ describe('Header component', () => {
         expect(wrapper.find('div').text()).toBe(message);
     });
 
-
-    test('renders element correctly', () => {
-        // expect(wrapper).toMatchSnapshot();
+    test('snapchat correctly', () => {
+        expect(wrapper).toMatchSnapshot();
     });
-    
 })

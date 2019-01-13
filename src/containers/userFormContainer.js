@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
- import { fetchUserProjectsAndRoles, addProjecRoleToUser, resetRemoveRoleFromProject, removeRoleFromProject } from '../actions';
+import { fetchUserProjectsAndRoles, addProjecRoleToUser, resetRemoveRoleFromProject, removeRoleFromProject } from '../actions';
 
 class UserFormContainer extends Component {
 
@@ -17,7 +17,7 @@ class UserFormContainer extends Component {
     }
 
     componentDidUpdate(prevProps) {
-        if(prevProps.result !==  this.props.result ) {
+        if (prevProps.result !== this.props.result) {
             this.props.fetchUserProjectsAndRoles();
         }
     }
@@ -38,7 +38,7 @@ class UserFormContainer extends Component {
             this.props.resetRemoveRoleFromProject();
         })
     }
-    
+
     onSelectProject = (project) => {
         this.setState(() => ({
             project
@@ -87,4 +87,9 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, { fetchUserProjectsAndRoles, addProjecRoleToUser, removeRoleFromProject, resetRemoveRoleFromProject })(UserFormContainer);
+export default connect(mapStateToProps, {
+    fetchUserProjectsAndRoles,
+    addProjecRoleToUser,
+    removeRoleFromProject,
+    resetRemoveRoleFromProject
+})(UserFormContainer);
