@@ -46,8 +46,8 @@ describe('MODAL COMPONENT', () => {
         expect(props.closeModal.mock.calls.length).toEqual(1);
     });
 
-    // test('snapshot correctly', () => {
-    //     expect(wrapper).toMatchSnapshot();
-    // });
+    test('snapshot correctly', () => {
+        expect(wrapper).toMatchSnapshot();
+    });
     
 })

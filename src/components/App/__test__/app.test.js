@@ -63,9 +63,8 @@ describe('APP COMPONENT', () => {
         expect(wrapper.find(Header).props()['message']).toBe('User Project Roles')
     });
 
-
-    // test('snapchat correctly', () => {
-    //     expect(wrapper).toMatchSnapshot();
-    // });
+    test('snapchat correctly', () => {
+        expect(wrapper).toMatchSnapshot();
+    });
 
 })

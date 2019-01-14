@@ -42,8 +42,8 @@ describe('Input component', () => {
         wrapper.find('Input').simulate('change');
         expect(props.onChange.mock.calls.length).toEqual(1);
     });
-
-    // test('snapshot correctly', () => {
-    //     expect(wrapper).toMatchSnapshot();
-    // });
+    
+    test('snapshot correctly', () => {
+        expect(wrapper).toMatchSnapshot();
+    });
 })

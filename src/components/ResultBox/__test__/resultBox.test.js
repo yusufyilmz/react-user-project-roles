@@ -52,9 +52,8 @@ describe('RESULTBOX COMPONENT', () => {
         expect(wrapper.find(Modal).props()['result']).toBe(props.form.result)
     });
 
-
-    // test('snapchat correctly', () => {
-    //     expect(wrapper).toMatchSnapshot();
-    // });
+    test('snapshot correctly', () => {
+        expect(wrapper).toMatchSnapshot();
+    });
 
 })

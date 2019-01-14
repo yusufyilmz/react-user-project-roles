@@ -53,9 +53,7 @@ describe('USERFORM COMPONENT', () => {
     test('renders props correctly', () => {
         expect(wrapper.find('Input').at(0).props()['type']).toBe('text')
     })
-
-    // test('snapshot correctly', () => {
-    //     expect(wrapper).toMatchSnapshot();
-    // });
-
+    test('snapshot correctly', () => {
+        expect(wrapper).toMatchSnapshot();
+    });
 })
