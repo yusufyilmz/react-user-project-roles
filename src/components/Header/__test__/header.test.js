@@ -16,11 +16,20 @@ describe('HEADER COMPONENT', () => {
         );
     });
    
+      
     test('renders element correctly', () => {
+        expect(wrapper.find('div').length).toBe(1);
+    });
+
+    test('renders element correctly', () => {
+        expect(wrapper.find('h1').length).toBe(1);
+    });
+
+    test('renders text correctly', () => {
         expect(wrapper.find('div').text()).toBe(message);
     });
 
-    test('snapchat correctly', () => {
-        expect(wrapper).toMatchSnapshot();
-    });
+    // test('snapshot correctly', () => {
+    //     expect(wrapper).toMatchSnapshot();
+    // });
 })

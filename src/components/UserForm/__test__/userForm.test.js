@@ -17,7 +17,9 @@ describe('USERFORM COMPONENT', () => {
 
     const mockStore = configureMockStore(middlewares);
     const store = mockStore({
-        form: {},
+        form: {
+            userHasRole: true
+        },
     });
 
     let wrapper;
@@ -34,17 +36,26 @@ describe('USERFORM COMPONENT', () => {
         expect(wrapper.find('Form').at(0).length).toBe(1)
     })
 
-    test('renders form element correctly', () => {
+    test('renders element correctly', () => {
         expect(wrapper.find(SelectBox).length).toBe(3)
     })
 
-    test('renders form element correctly', () => {
-        expect(wrapper.find(Input).length).toBe(4)
-        expect(wrapper.find('Label').length).toBe(4)
+    test('renders element correctly', () => {
+        expect(wrapper.find(Input).length).toBe(5)
+        expect(wrapper.find('Label').length).toBe(5)
     })
 
-    test('snapchat correctly', () => {
-        expect(wrapper).toMatchSnapshot();
-    });
+
+    test('renders props correctly', () => {
+        expect(wrapper.find('SelectBox').at(0).props()['name']).toBe('user')
+    })
+
+    test('renders props correctly', () => {
+        expect(wrapper.find('Input').at(0).props()['type']).toBe('text')
+    })
+
+    // test('snapshot correctly', () => {
+    //     expect(wrapper).toMatchSnapshot();
+    // });
 
 })

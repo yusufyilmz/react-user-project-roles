@@ -67,11 +67,11 @@ export const fetchUserProjectsAndRoles = () => async (dispatch, getState) => {
             }))
         }
 
-        dispatch(errorOccured(usersResponse.data))
+        dispatch(errorOccured({status: 'ERROR', message: 'Couldnt get data from server'}))
 
     }
     catch (e) {
-        dispatch(errorOccured(e))
+        dispatch(errorOccured({status: 'ERROR', message: e.message}))
     }
 }
 
@@ -93,7 +93,7 @@ export const addProjecRoleToUser = (item) => async (dispatch, getState) => {
 
     }
     catch (e) {
-        dispatch(errorOccured(e))
+        dispatch(errorOccured({status: 'ERROR', message: e.message}))
     }
 }
 
@@ -116,6 +116,6 @@ export const removeRoleFromProject = (user) => async (dispatch, getState) => {
         dispatch(errorOccured(response.data))
     }
     catch (e) {
-        dispatch(errorOccured(e))
+        dispatch(errorOccured({status: 'ERROR', message: e.message}))
     }
 }

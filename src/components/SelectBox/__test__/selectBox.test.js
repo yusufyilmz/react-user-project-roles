@@ -65,8 +65,8 @@ describe('SELECTBOX COMPONENT', () => {
     });
 
 
-    test('snapchat correctly', () => {
-        expect(wrapper).toMatchSnapshot();
-    });
+    // test('snapshot correctly', () => {
+    //     expect(wrapper).toMatchSnapshot();
+    // });
 
 })

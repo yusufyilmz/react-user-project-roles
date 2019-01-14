@@ -22,6 +22,14 @@ describe('Input component', () => {
         );
     });
 
+    test('renders element correctly', () => {
+        expect(wrapper.find('Input').length).toBe(1);
+    });
+
+    test('renders element correctly', () => {
+        expect(wrapper.find('Label').length).toBe(1);
+    });
+
     test('renders onclick correctly', () => {
         expect(wrapper.find('Label').text()).toBe(props.text);
     });
@@ -35,7 +43,7 @@ describe('Input component', () => {
         expect(props.onChange.mock.calls.length).toEqual(1);
     });
 
-    test('snapchat correctly', () => {
-        expect(wrapper).toMatchSnapshot();
-    });
+    // test('snapshot correctly', () => {
+    //     expect(wrapper).toMatchSnapshot();
+    // });
 })

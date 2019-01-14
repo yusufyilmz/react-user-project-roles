@@ -71,7 +71,7 @@ const removeProjectRoleFromUser = (request) => {
         return {
           status: 'OK',
           message: 'Successfully deleted project role from user',
-          data: users
+          data: user
         }
       }
     }
@@ -130,7 +130,7 @@ const addProjectRoleToUser = (request) => {
       user.projects.push(project);
       return {
         status: 'OK',
-        data: users,
+        data: user,
         message: 'Succesfully added project role'
       }
     }
@@ -142,7 +142,7 @@ const addProjectRoleToUser = (request) => {
       user.projects.push(project);
       return {
         status: 'OK',
-        data: users,
+        data: user,
         message: 'Succesfully added project role'
       }
     }
@@ -150,7 +150,7 @@ const addProjectRoleToUser = (request) => {
       userProject.role = role;
       return {
         status: 'OK',
-        data: users,
+        data: user,
         message: 'Succesfully added project role'
       }
     }
@@ -196,4 +196,4 @@ Server.mockPost(removeprojectroleEndPoint, requestRemoveProjectRoleFromUserHandl
 Server.mockGet(usersEndPoint, requestUsersHandler)
 Server.mockGet(projectsEndPoint, requestProjectsHandler)
 Server.mockGet(rolesEndPoint, requestRolesHandler)
-Server.on() 
+Server.on()

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Ul = styled.ul`
     z-index: 10;
     position: absolute;
-    width: 57%;
+    width: 95%;
     margin-top: 0px;
     border: 1px solid #dfdfdf;
     border-bottom-right-radius: 3px;
@@ -14,14 +14,12 @@ export const Ul = styled.ul`
     font-weight: 700;
     padding: 15px 0;
     max-height: 215px;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
     @media screen and (max-width: 600px) {
-      width: 75%;
+      width: 85%;
     }`;
 
 export const Li = styled.li`
-    width: 100%;
+    width: inherit;
     font-size: 1rem;
     padding: 8px 10px;
     line-height: 1.6rem;

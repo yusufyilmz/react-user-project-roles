@@ -12,21 +12,23 @@ export const Modal = styled.div`
     background-color: rgba(0,0,0,0.4); 
 `;
 
+Modal.displayName = 'Modal'
+
 export const ModalContent = styled.div`
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%; 
+    margin: 40% auto;
+    text-align: center;
+    font-size: x-large;
+    width: 60%; 
     padding: 15px;
     margin-bottom: 20px;
     border: 1px solid transparent;
     border-radius: 4px;
-    color: #a94442;
     border-color: #ebccd1;
     background-color: ${props => props.result === 'OK' ? '#28a745' :  '#f2dede'}
     color: ${props => props.result === 'OK' ? 'white' :  '#a94442'}
 `
+ModalContent.displayName = 'ModalContent'
+
 
 export const ModalClose = styled.span`
     color: #aaa;

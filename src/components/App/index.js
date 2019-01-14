@@ -1,16 +1,18 @@
 import React from 'react';
-import { Container, } from './style';
-import {Header} from '../Header';
+import { Container, Main } from './style';
+import { Header } from '../Header';
 import UserForm from '../UserForm';
-import Result from '../Result';
+import ResultBox from '../ResultBox';
 
 export const App = () => {
     return (
         <Container>
-        <Header message="User Project Roles"/>
-        <UserForm />
-        <Result />
-    </Container>
+            <Main>
+                <Header message="User Project Roles" />
+                <UserForm />
+                <ResultBox />
+            </Main>
+        </Container>
     );
 }
 

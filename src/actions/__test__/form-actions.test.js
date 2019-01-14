@@ -30,29 +30,8 @@ describe('ACTIONS', () => {
         moxios.uninstall();
     });
 
-    // test('creates GET_POSTS_SUCCESS after successfuly fetching postse', () => {
-    //     moxios.wait(() => {
-    //         const request = moxios.requests.mostRecent();
-    //         request.respondWith({
-    //             status: 200,
-    //             response: getPostsMock,
-    //         });
-    //     });
 
-    //     const expectedActions = [
-    //         { type: actionTypes.FETCH_USERS_PROJECTS_ROLES, posts: getPostsMock },
-    //     ];
-
-    //     const store = mockStore({ users: [], projects: [], roles: [] })
-
-    //     return store.dispatch(actions.fetchUserProjectsAndRoles()).then(() => {
-    //         // return of async actions
-    //         expect(store.getActions()).toEqual(expectedActions);
-    //     });
-
-    // })
-
-    test('addProjecRoleToUser', () => {
+    test('addProjecRoleToUser success', () => {
 
         var response = {
             status: 'OK',
@@ -80,8 +59,57 @@ describe('ACTIONS', () => {
 
     })
 
+    test('addProjecRoleToUser unstable error', () => {
 
-    test('removeRoleFromProject', () => {
+        var response = {"message": "Request failed with status code 400", "status": "ERROR"};
+        moxios.wait(() => {
+            const request = moxios.requests.mostRecent();
+            request.respondWith({
+                status: 400
+            });
+        });
+
+        const expectedActions = [
+            {
+                type: actionTypes.ERROR_OCCURED, payload:  response
+            },
+        ];
+
+        return store.dispatch(actions.addProjecRoleToUser(item)).then(() => {
+            expect(store.getActions()).toEqual(expectedActions);
+        });
+
+    })
+
+    test('addProjecRoleToUser api error', () => {
+
+        var response= {
+            status: 'ERROR',
+            message: 'error occured'
+        };
+
+        moxios.wait(() => {
+            const request = moxios.requests.mostRecent();
+            request.respondWith({
+                status: 200,
+                response
+            });
+        });
+
+        const expectedActions = [
+            {
+                type: actionTypes.ERROR_OCCURED, payload: response
+            },
+        ];
+
+        return store.dispatch(actions.addProjecRoleToUser(item)).then(() => {
+            expect(store.getActions()).toEqual(expectedActions);
+        });
+
+    })
+
+
+    test('removeRoleFromProject success', () => {
 
         var response = {
             status: 'OK',
@@ -108,8 +136,59 @@ describe('ACTIONS', () => {
         });
     })
 
+    test('removeRoleFromProject api error', () => {
 
-    test('fetchUserProjectsAndRoles', () => {
+        var response= {
+            status: 'ERROR',
+            message: 'error occured'
+        };
+
+        moxios.wait(() => {
+            const request = moxios.requests.mostRecent();
+            request.respondWith({
+                status: 200,
+                response
+            });
+        });
+
+        const expectedActions = [
+            {
+                type: actionTypes.ERROR_OCCURED, payload: response
+            },
+        ];
+
+        return store.dispatch(actions.removeRoleFromProject(item)).then(() => {
+            expect(store.getActions()).toEqual(expectedActions);
+        });
+    })
+
+
+    test('removeRoleFromProject network error', () => {
+
+        var response = {"message": "Request failed with status code 400", "status": "ERROR"};
+
+        moxios.wait(() => {
+            const request = moxios.requests.mostRecent();
+            request.respondWith({
+                status: 200,
+                response
+            });
+        });
+
+        const expectedActions = [
+            {
+                type: actionTypes.ERROR_OCCURED, payload: response
+            },
+        ];
+
+        return store.dispatch(actions.removeRoleFromProject(item)).then(() => {
+            expect(store.getActions()).toEqual(expectedActions);
+        });
+    })
+
+
+
+    test('fetchUserProjectsAndRoles success', () => {
 
         var response = {
             users: [],
@@ -154,6 +233,42 @@ describe('ACTIONS', () => {
             expect(store.getActions()).toEqual(expectedActions);
         });
     })
+
+
+    
+    test('fetchUserProjectsAndRoles network error', () => {
+
+        var response = {"message": "Request failed with status code 400", "status": "ERROR"};
+
+        moxios.wait(() => {
+            moxios.respondAllWith(
+                {
+                    status: 400,
+                    response
+                },
+                {
+                    status: 400,
+                    response
+
+                },
+                {
+                    status: 400,
+                    response
+                }
+            )
+        });
+
+        const expectedActions = [
+            {
+                type: actionTypes.ERROR_OCCURED, payload: response
+            },
+        ];
+
+        return store.dispatch(actions.fetchUserProjectsAndRoles(item)).then(() => {
+            expect(store.getActions()).toEqual(expectedActions);
+        });
+    })
+
 
     test('resetRemoveRoleFromProject', () => {
 
